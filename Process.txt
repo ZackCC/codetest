@@ -1,0 +1,9 @@
+Installed ATOM
+Installed Brew (Brew.sh)
+Installed several packages in ATOM
+Package 1 -  platform-io-ide terminal
+Package 2 - remote-edit-ne
+Created GitHub Account
+Verfied GitHub Email
+Fork ultamatt's Codetest
+Installed Node 8 via Brew

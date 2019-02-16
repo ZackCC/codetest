@@ -35,4 +35,8 @@
 23. git config --global user.name "Zack CC"
 24. git config --global user.email zack@zack.cc
 25. installed Express $ npm install express --save
-26. 
+26. Matt lesson on defining objects and calling functions
+  var library = require("./index.js")
+  library.islame("James");
+  library.iscool("Scot");
+27. 

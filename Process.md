@@ -36,7 +36,9 @@
 24. git config --global user.email zack@zack.cc
 25. installed Express $ npm install express --save
 26. Matt lesson on defining objects and calling functions
-  var library = require("./index.js")
-  library.islame("James");
-  library.iscool("Scot");
-27. 
+  - var library = require("./index.js")
+  - library.islame("James");
+  - library.iscool("Scot");
+27. Added express server to index.js on port 3000
+28. Created Film fact Array, replacing Hello World
+  - created fact index random variable to load random fact

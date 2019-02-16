@@ -34,4 +34,5 @@
 22. install sequential-number
 23. git config --global user.name "Zack CC"
 24. git config --global user.email zack@zack.cc
-25.
+25. installed Express $ npm install express --save
+26. 

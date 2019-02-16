@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ZackCC/codetest/issues"
   },
-  "homepage": "https://github.com/ZackCC/codetest#readme"
+  "homepage": "https://github.com/ZackCC/codetest#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }

@@ -7,3 +7,13 @@ Created GitHub Account
 Verfied GitHub Email
 Fork ultamatt's Codetest
 Installed Node 8 via Brew
+Git cloned Codetest to local directory
+Configured Git to use nano instead of vim "git config --global core.editor “nano”"
+Created Process.txt=
+Checked off tasks in readme.
+commit all
+Commented changes in Commit.
+NPM
+used npm init to create packages
+create index.js as package entry File
+console.log ("hello world")

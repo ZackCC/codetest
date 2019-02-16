@@ -42,3 +42,5 @@
 27. Added express server to index.js on port 3000
 28. Created Film fact Array, replacing Hello World
   - created fact index random variable to load random fact
+29. discussed scope within functions, and added function to retrieve specific fact
+30. 

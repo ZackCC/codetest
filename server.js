@@ -26,17 +26,17 @@ let facts = ["Hitchcock made at least one film in his career.", "Matt has made 3
 app.use(express.static("assets"))
 //Get array (Default Route)
 app.get('/fact/', function(request, response) {
-  return response.send(facts.toString());
+  return response.json(facts.toString());
 });
 //Get Random Fact
 app.get('/fact/random', function(request, response) {
   const fact_index = Math.floor(Math.random() * facts.length)
-  return response.send(facts[fact_index]);
+  return response.json(facts[fact_index]);
 });
 //Get Specific Fact
 app.get('/fact/:id', function(request, response) {
   const fact_index = request.params.id
-  return response.send(facts[parseInt(fact_index)]);
+  return response.json(facts[parseInt(fact_index)]);
 });
 
 

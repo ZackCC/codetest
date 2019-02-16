@@ -1,11 +1,15 @@
+<!-- Page Main Title -->
 <h1>
   Welcome to The Film Facts Emporium
 </h1>
-
+<!-- Random Fact Section -->
 <h2>
  Get a Random Fact
 </h2>
 <button type="button" onclick="logclick()" >Click for a random fact!</button>
+<p id="randomfactsection">
+The fact will be here!
+</p>
 <script>
   (function () {
    console.log("Hello Browser World!")
@@ -13,8 +17,13 @@
   function logclick() {
     //console.log("Somebody wanted a random fact...")
     fetch('http://localhost:3000/fact/random')
-  .then(function(fact) {
-    console.log(fact);
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(randomfact) {
+    const resultingfact = JSON.stringify(randomfact)
+    console.log(resultingfact);
+    document.getElementById("randomfactsection").innerHTML = resultingfact;
   });
   }
 </script>

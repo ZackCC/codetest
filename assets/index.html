@@ -6,17 +6,19 @@
 <h2>
  Get a Random Fact
 </h2>
-<button type="button" onclick="logclick()" >Click for a random fact!</button>
+<button type="button" onclick="randomclick()" >Click for a random fact!</button>
 <p id="randomfactsection">
 The fact will be here!
 </p>
 <script>
+/* tap the console
   (function () {
    console.log("Hello Browser World!")
   }());
-  function logclick() {
+*/
+  function randomclick() {
     //console.log("Somebody wanted a random fact...")
-    fetch('http://localhost:3000/fact/random')
+   fetch('http://localhost:3000/fact/random')
   .then(function(response) {
     return response.json();
   })
@@ -26,4 +28,28 @@ The fact will be here!
     document.getElementById("randomfactsection").innerHTML = resultingfact;
   });
   }
+  function drawbuttons() {
+    fetch('http://localhost:3000/fact/')
+   .then(function(response) {
+     return response.json();
+   })
+   .then(function(eachfact) {
+     const eachfact = JSON.stringify(eachfact)
+     console.log(eachfact);
+     document.getElementById("randomfactsection").innerHTML = eachfact;
+   });
+   }
+
+    const factnumber = 0;
+    for ( factnumber = 0; factnumber < cars.length; factnumber++) {
+      text += cars[i] + "<br>";
+    }
+  }
 </script>
+<h2>
+Read your favorite fact!
+</h2>
+<button type="button" onclick="drawbuttons()" > OPEN THE LIBRARY </button>
+<p id="specificfactsection">
+The fact will be here!
+</p>

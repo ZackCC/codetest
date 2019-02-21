@@ -25,8 +25,11 @@ let facts = ["Hitchcock made at least one film in his career.", "Matt has made 3
 //Yo Express, We have static files! (Default Route)
 app.use(express.static("assets"))
 //Get array
-app.get('/fact/', function(request, response) {
+/* app.get('/fact/', function(request, response) {
   return response.json(facts.toString());
+}); */
+app.get('/factarray/', function(request, response) {
+  return response.json(JSON.stringify(facts));
 });
 //Get Random Fact
 app.get('/fact/random', function(request, response) {

@@ -16,17 +16,17 @@
   });
   }
   function drawbuttons() {
-    fetch('http://localhost:3000/fact/')
+    fetch('http://localhost:3000/factarray/')
    .then(function(response) {
      return response.json();
    })
    .then(function(eachfact) {
      const eachfact = JSON.stringify(eachfact)
      console.log(eachfact);
-     document.getElementById("randomfactsection").innerHTML = eachfact;
+     document.getElementById("eachfactsection").innerHTML = eachfact;
    });
    }
 
-    for ( let factnumber = 0; factnumber < cars.length; factnumber++) {
-      text += cars[i] + "<br>";
+    for ( let factnumber = 0; factnumber < facts.length; factnumber++) {
+      text += facts[factnumber] + "<br>";
     }

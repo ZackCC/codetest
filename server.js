@@ -29,12 +29,16 @@ app.use(express.static("assets"))
   return response.json(facts.toString());
 }); */
 app.get('/factarray/', function(request, response) {
-  return response.json(JSON.stringify(facts));
+  return response.json(facts);
 });
 //Get Random Fact
 app.get('/fact/random', function(request, response) {
-  const fact_index = Math.floor(Math.random() * facts.length)
-  return response.json(facts[fact_index]);
+  const randomfactindex = Math.floor(Math.random() * facts.length)
+  let returnable = {
+    fact:facts[randomfactindex],
+    randomfactindex:randomfactindex
+  }
+  return response.json(returnable);
 });
 //Get Specific Fact
 app.get('/fact/:id', function(request, response) {

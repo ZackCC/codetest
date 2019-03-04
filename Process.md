@@ -43,4 +43,8 @@
 28. Created Film fact Array, replacing Hello World
   - created fact index random variable to load random fact
 29. discussed scope within functions, and added function to retrieve specific fact
-30. 
+30. Attempted to install heroku via homebrew, required dependencies in Xcode, updated Xcode, installed heroku.
+31. heroku autocomplete
+32. heroku create filmfacts
+33. git push heroku master
+34. filmfacts.heroku.com lol, its broken.

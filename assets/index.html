@@ -1,23 +1,61 @@
 <head>
   <script type="text/javascript" src="app.js"></script>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+</head>
 <!-- Page Main Title -->
-<h1>
-  Welcome to The Film Facts Emporium
-</h1>
-<!-- Random Fact Section -->
-<h2>
- Get a Random Fact
-</h2>
-<button type="button" onclick="randomclick()" >Click for a random fact!</button>
-<p id="randomfactsection">
-The fact will be here!
-</p>
+<body>
+<!-- This is the NavBar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://github.com/ZackCC">
+       <h1 class="is-primary has-text-weight-bold is-size-3">Welcome to The Film Facts Emporium</h1>
+    </a>
 
-<h2>
-Read your favorite fact!
-</h2>
-<button type="button" onclick="drawbuttons()" > OPEN THE LIBRARY </button>
-<p id="eachfactsection">
-The fact will be here!
-</p>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" onclick="randomclick()">
+        Random Fact!
+      </a>
+
+      <a class="navbar-item" onclick="drawbuttons()">
+        Favorite Fact!
+      </a>
+
+  </div>
+</nav>
+
+
+
+
+<!-- Random Fact Section -->
+<!-- <h2>
+  Get a Random Fact
+ </h2>
+ <button type="button" onclick="randomclick()" >Click for a random fact!</button> -->
+
+ <section class="hero is-info is-large">
+   <div class="hero-body">
+     <div class="container">
+       <h1 class="title" id="randomfactsection">
+         Random Facts!
+       </h1>
+       <h2  class="subtitle" id="randomfactindexsection">
+       </h2>
+     </div>
+   </div>
+ </section>
+ <h2>
+ Read your favorite fact!
+ </h2>
+ <button type="button" onclick="drawbuttons()" > OPEN THE LIBRARY </button>
+ <ul id="eachfactsection">
+ The fact will be here!
+ </ul>
+</body>

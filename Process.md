@@ -48,3 +48,4 @@
 32. heroku create filmfacts
 33. git push heroku master
 34. filmfacts.heroku.com lol, its broken.
+35. Added Bulma CSS framework and added Navbar, Revamped Random Fact in Bulma Framework Styling, Made Eachfact button do something.

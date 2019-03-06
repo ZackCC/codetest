@@ -18,9 +18,9 @@ module.exports.islame = function(whoislame){
 
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000;
 let facts = ['Hitchcock made at least one film in his career.', 'Matt has made 36 feature films in the past decade. all of them were silent pornos', 'Scot Gray is famous for his appearances in several TV Westerns in the late 1300s', 'Fact #4 returns null', '5 whole facts testing the array math'];
- 
+
 //app.get('/', (req, res) => res.send('Hello World!'))
 //Yo Express, We have static files! (Default Route)
 app.use(express.static('assets'));

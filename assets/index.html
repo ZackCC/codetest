@@ -5,7 +5,7 @@
 <!-- Page Main Title -->
 <body>
 <!-- This is the NavBar -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://github.com/ZackCC">
        <h1 class="is-primary has-text-weight-bold is-size-3">Welcome to The Film Facts Emporium</h1>
@@ -24,7 +24,7 @@
         Random Fact!
       </a>
 
-      <a class="navbar-item" onclick="drawbuttons()">
+      <a class="navbar-item" onclick="scrolltofactlibrary()">
         Favorite Fact!
       </a>
 
@@ -35,7 +35,7 @@
 
 
 <!-- Random Fact Section -->
- <section class="hero is-info is-large">
+ <section class="hero is-info is-fullheight" id="topofrandomfactsection">
    <div class="hero-body">
      <div class="container">
        <h1 class="title" id="randomfactsection">
@@ -47,15 +47,18 @@
    </div>
  </section>
 <!-- Fact Library -->
-<section class="hero is-primary">
+<section class="hero is-primary is-fullheight">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title" id="specificfactsection">
+      <h1 class="title" id="factlibrarysection">
         All the Facts
       </h1>
-      <h2  class="subtitle" id="specificfactindexsection">
+      <h2  class="subtitle" id="factlibraryindexsection">
         Read your favorite fact!
       </h2>
+      <ol id="eachfactsection">
+
+      </ol>
     </div>
   </div>
 </section>

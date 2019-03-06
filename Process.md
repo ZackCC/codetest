@@ -49,3 +49,7 @@
 33. git push heroku master
 34. filmfacts.heroku.com lol, its broken.
 35. Added Bulma CSS framework and added Navbar, Revamped Random Fact in Bulma Framework Styling, Made Eachfact button do something.
+36. install linter-eslint
+37. npm install -g eslint
+38. eslint --init
+39.

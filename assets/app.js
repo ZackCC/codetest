@@ -5,7 +5,7 @@
 */
 function randomclick() {
     console.log('Somebody wanted a random fact...');
-    fetch('http://localhost/fact/random')
+    fetch('http://localhost:$PORT/fact/random')
         .then(function(response) {
             return response.json();
         })
@@ -24,7 +24,7 @@ function randomclick() {
 
 function drawbuttons() {
     console.log('Someone wanted a specific fact...');
-    fetch('http://localhost/factarray/')
+    fetch('http://localhost:$PORT/factarray/')
         .then(function(response) {
             return response.json();
         })

@@ -5,7 +5,7 @@
 */
 function randomclick() {
     console.log('Somebody wanted a random fact...');
-    fetch('http://localhost:5000/fact/random')
+    fetch('http://138.68.17.16:5000//fact/random')
         .then(function(response) {
             return response.json();
         })
@@ -24,7 +24,7 @@ function randomclick() {
 
 function drawbuttons() {
     console.log('Someone wanted a specific fact...');
-    fetch('http://localhost:5000/factarray/')
+    fetch('http://138.68.17.16:5000//factarray/')
         .then(function(response) {
             return response.json();
         })

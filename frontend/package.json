@@ -1,0 +1,33 @@
+{
+  "name": "movie_client",
+  "version": "1.0.0",
+  "description": "This Tinder App Is about helping you keep track of which movies you like or dislike.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZackCC/codetest.git"
+  },
+  "keywords": [
+    "cinema",
+    "tinder",
+    "swipe",
+    "test",
+    "hireme"
+  ],
+  "author": "Zack CC, Matt Moeller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZackCC/codetest/issues"
+  },
+  "homepage": "https://github.com/ZackCC/codetest#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-plugin-html": "^5.0.3"
+  }
+}
